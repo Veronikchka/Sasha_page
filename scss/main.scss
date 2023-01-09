@@ -44,7 +44,7 @@ body h1 {
 .morning__item,
 .afternoon__item,
 .evening__item {
-
+position: relative;
       width: 100px;
       height: 100px;
       padding: 10px;
@@ -71,10 +71,27 @@ body h1 {
 .evening__item:hover {
 
     background-color: olive;
-    transform: rotate(180deg);
+    transform: scale(105%);
   }
 
+.house_chores {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.house_chores_list {
+  position: absolute;
+    top: 4px;
+    left: 40px;
+    width: 75px;
+    height: 15px;
+    border-style: none;
+    font-size: 36px;
+    
+    
 
+
+}
 
 .thumb {
   position: relative;
@@ -110,9 +127,7 @@ body h1 {
   transform: translatex(-100%);
   transition: transform 250ms ease;
 }
-.thumb:hover .overlay {
-    transform: translatex(0);
-}
+
 
 .thumb img {
     border-radius: 5px;
