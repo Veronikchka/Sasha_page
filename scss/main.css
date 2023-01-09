@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: bisque;
   display: flex;
@@ -20,9 +26,11 @@ body h1 {
 .afternoon__list,
 .evening__list {
   list-style: none;
-  width: 1200px;
+  flex-basis: 1200px;
   border: 1px solid green;
   padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +63,7 @@ body h1 {
 .morning__item:hover,
 .afternoon__item:hover,
 .evening__item:hover {
-  background-color: olive;
+  background-color: rgb(254, 254, 254);
   transform: scale(105%);
 }
 
@@ -68,11 +76,11 @@ body h1 {
 .house_chores_list {
   position: absolute;
   top: 4px;
-  left: 40px;
-  width: 75px;
+  left: 44px;
+  width: 50px;
   height: 15px;
   border-style: none;
-  font-size: 36px;
+  font-size: 16px;
 }
 
 .thumb {
@@ -119,11 +127,14 @@ body h1 {
   font-size: 26px;
 }
 
-.perks__list {
+.push__list {
   width: 1200px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
 }
 
 .heading_3 {
